@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alexandre Wilhelm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">Wilhelm Alexandre</td>
+                <td id="navigation">
+                    <a href="#work">Travaux</a>
+                    <a href="#bio">À Propos</a>
+                    <a href="#contact">Contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>Étudiant en 3D, Animation & Jeux Vidéo à Ynov Aix Campus</h1>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.artstation.com/starscrims" target="_blank"><i class="fab fa-artstation"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://www.linkedin.com/in/alexandre-wilhelm-6a025a193/" target="_blank"><i class="fab fa-linkedin"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://discordapp.com/users/899181957756375090" target="_blank"><i class="fab fa-discord"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="https://youtu.be/2jceYV8JJ_s" target="_blank"><i class="fab fa-youtube"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>Travaux</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="https://media.discordapp.net/attachments/966104112208961546/1161429861773086850/alexandre-wilhelm-patriot-cover-fini.jpg?ex=653844d9&is=6525cfd9&hm=4f49f15ead21d61fc9a6be1b0f3be3f9c03a70917e968822ca5874e29162070e&=&width=478&height=670">
+            <img onclick="magnify($(this).attr('src'))" src="https://media.discordapp.net/attachments/966104112208961546/1161430145349984256/ok7K4q5A_2x.jpg?ex=6538451c&is=6525d01c&hm=5d642e6fcaee4e2c8b6fb2fac2fedcef0f8209f609cc0db6295e0edfc6c8f112&=&width=963&height=670">
+            <img onclick="magnify($(this).attr('src'))" src="https://media.discordapp.net/attachments/966104112208961546/1161430236773220352/alexandre-wilhelm-chess.jpg?ex=65384532&is=6525d032&hm=ec38b3af60f2cd57c4ee371fc9dac6739bcd9ec3aea9da21e329e141f1494028&=&width=1191&height=670">
+            <img onclick="magnify($(this).attr('src'))" src="https://media.discordapp.net/attachments/966104112208961546/1161430429874794566/vue_densemble_2.jpg?ex=65384560&is=6525d060&hm=ac6ff6aa2246c4696ddf6dd9ece1e11f573f4fe9f4e47679aeb4299e2621ec02&=&width=1191&height=670">
+            <img onclick="magnify($(this).attr('src'))" src="https://media.discordapp.net/attachments/966104112208961546/1161430936987123812/IMG_20230514_181818.jpg?ex=653845d9&is=6525d0d9&hm=293fbcfa87e69bbacf2d18012b41dfa949e1da1c52f5f99fdc98b3d10e65d8bb&=&width=678&height=670">
+            <img onclick="magnify($(this).attr('src'))" src="https://media.discordapp.net/attachments/966104112208961546/1161430937763061850/oop.PNG?ex=653845d9&is=6525d0d9&hm=1cb8879d843fa3fbf66b44bc9f6c2fc9c2838439826dbb1dae560e3e87c6cfe0&=&width=507&height=670">
+            <img onclick="magnify($(this).attr('src'))" src="https://media.discordapp.net/attachments/966104112208961546/1161431249831866499/alexandre-wilhelm-885_1.jpg?ex=65384624&is=6525d124&hm=64cbac44ce281d2f78a322dedb8087b5941b307beac74d5486535607767f7196&=&width=1191&height=670">
+        </div>
+    </div>
+    <div id="bio">
+        <h1>À Propos</h1>
+        <p>
+            Venant d'une formation en lycée professionnel en réalisation de produits imprimés et plurimédia en options graphiques, j'ai depuis prix d'intérêt et de curiosité pour le domaine de l'informatique et de l'art, cela se reflète par les années d'études supérieures qui ont suivi en BTS informatique en système numérique puis de mon année de DNMADE graphique. Et c'est pour cela j'ai choisi de venir à Ynov Aix Campus, en 3D Animation & Jeux Vidéo, pour ma soif de connaissances et l'apprentissage de nouvelles techniques et logiciels, qu'ainsi ma passion de toujours, le jeu vidéo.
+        </p>
+        <p>
+            Depuis 8 ans maintenant, j'ai appris tout un tas de logiciels, passant par la suite Adobe, avec Photoshop, Illustrator, Indesign ou encore Premiere Pro, puis des logiciels tels que QuarkxPress, la suite Microsoft Office, Substance painter, Autodesk Maya, Zbrush, Medibang, et encore Procreate avec lesquels je réalise des illustrations, dont l'une en collaboration avec l'artiste de webtoon GranImperio pour la couverture d'un roman aux éditions Baudelaire, "Patriots, l'aube d'une nouvelle ère" par l'écrivain Mô Grimm.
+        </p>
+    </div>
+    <div id="contact">
+        <h1>Contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; Wilhelm.alexandre.pro@gmail.com</td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; Alexandre.wilhelm@ynov.com</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        France,<br>
+                                        Provence-Alpes-Côte d'Azur,<br>
+                                        Marseille
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="social" href="https://www.artstation.com/starscrims" target="_blank"><i class="fab fa-artstation"></i></a>
+                                        <a class="social" href="https://www.linkedin.com/in/alexandre-wilhelm-6a025a193/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                        <a class="social" href="https://discordapp.com/users/899181957756375090" target="_blank"><i class="fab fa-discord"></i></a>
+                                        <a class="social" href="https://youtu.be/2jceYV8JJ_s" target="_blank"><i class="fab fa-youtube"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" placeholder="name" required>
+                            <input type="email" placeholder="email" required><br>
+                            <textarea placeholder="your message" required rows="5"></textarea><br>
+                            <button class="btn_one">send</button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer">
+        Wilhelm Alexandre <br> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Étudiant en 3D, Animation & Jeux Vidéo</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
